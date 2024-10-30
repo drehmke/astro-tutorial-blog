@@ -1,0 +1,21 @@
+---
+import Layout from '@layouts/Layout.astro';
+
+const pageTitle = 'Pink Flamingos Blogging'
+
+---
+
+<Layout title={pageTitle}>
+  <h1>{pageTitle}</h1>
+  <main>
+    <sidebar>
+      <nav>
+        <ul>
+          <li><a href="./posts/post-01">Post 01</a></li>
+          <li><a href="./posts/post-02">Post 02</a></li>
+          <li><a href="./posts/post-03">Post 03</a></li>
+        </ul>
+      </nav>
+    </sidebar>
+  </main>
+</Layout>
