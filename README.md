@@ -16,3 +16,7 @@ After cloning, run `bun install`.
 To spin the site up, `bun run dev`.
 
 Bun is fun.
+
+# Left Off At #
+
+https://docs.astro.build/en/tutorial/2-pages/4/
