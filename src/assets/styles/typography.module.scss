@@ -1,0 +1,26 @@
+@use './fonts.module.scss';
+
+:root {
+  --font-weight__light: 300;
+  --font-weight__regular: 400;
+  --font-weight__medium: 500;
+  --font-weight__semibold: 600;
+  --font-weight__bold: 700;
+  --font-weight__black: 800;
+  --font-weight__extra: 900;
+}
+
+
+html,
+body {
+  @include fonts.josefin(var(--font-weight__regular), 'normal');
+  font-size: 16px;
+}
+
+em, i {
+  @include fonts.josefin(var(--font-weight__regular), 'italic');
+}
+
+strong, bold {
+  @include fonts.josefin(--font-weight__semibold);
+}

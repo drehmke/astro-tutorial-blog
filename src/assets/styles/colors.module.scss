@@ -1,0 +1,40 @@
+:root {
+/*
+  --black: #020301;
+  --white: #f3f5f9;
+  --yellow: #feda15;
+  --red: #ff0f39;
+  --blue: #7e9dc2;
+  --green: #2c7721;
+  --purple: #b777e6;
+
+  --alert: var(--alert);
+  --success: var(--success);
+  --info: var(--info);
+  */
+  /* RGB */
+  --black-rgb: 2, 3, 1;
+  --black: rgb(var(--black-rgb));
+  --white-rgb: 243, 245, 249;
+  --white: rgb(var(--white-rgb));
+  --yellow-rgb: 245, 218, 21;
+  --yellow: rgb(var(--yellow-rgb));
+  --red-rgb: 255, 15, 57;
+  --red: rgb(var(--red-rgb));
+  --blue-rgb: 126, 157, 194;
+  --blue: rgb(var(--blue-rgb));
+  --green-rgb: 44, 119, 33;
+  --green: rgb(var(--green-rgb));
+  --purple-rgb: 183, 119, 230;
+  --purple: rgb(var(--purple-rgb));
+
+  --alert-rgb: var(--red-rgb);
+  --alert: rgb(var(--alert-rgb));
+  --success-rgb: var(--green-rgb);
+  --success: rgb(var(--success-rgb))
+  --info-rgb: var(--yellow-rgb);
+  --info: rgb(var(--info-rgb));
+  
+
+  color-scheme: light dark;
+}
