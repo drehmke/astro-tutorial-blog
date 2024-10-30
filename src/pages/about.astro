@@ -1,11 +1,46 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from '@layouts/Layout.astro';
+
+const pageTitle = 'About Pink Flamingos'
+
+const identity = {
+  firstName: 'Pink',
+  lastName: 'Flamingo',
+  country: 'Warm',
+  occupation: 'Water Stander',
+  hobbies: ['standing', 'dancing', 'sleeping'],
+}
+
+const skills = ['html', 'css', 'javascript', 'React', 'Astro']
+
+const happy = true;
+const finished = false;
+const goal = 4;
 ---
 
-<Layout title="About Pink Flamingos">
-  <h1>About Pink Flamingos</h1>
+<Layout title={pageTitle}>
+  <h1>{pageTitle}</h1>
   <main>
     <h2>I can put anything on it!</h2>
-    <p>Including pink flamingos!</p>
+    <ul>
+      <li>My name is: {identity.firstName}. I have a last name, but it's a secret.</li>
+      <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
+      {identity.hobbies.length >= 2 &&
+        <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}.</li>
+      }
+    </ul>
+    <p>I have skills.</p>
+    <ul>
+      {skills.map((skill) => <li>{skill.toUpperCase()}</li>)}
+    </ul>
+
+    <h2>Including pink flamingos!</h2>
+
+    {happy && <p>If you are happy and you know it, clap your hands!</p>}
+    {finished && <p>I have finished this tutorial!</p>}
+    {goal === 3 
+      ? <p>My goal is to finish in 3 days.</p> 
+      : <p>My goal is not yet complete. Stop distracting me.</p>
+    }
   </main>
 </Layout>
