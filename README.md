@@ -1,4 +1,4 @@
-### Pink Flamingo Blog###
+### Pink Flamingo Blog ###
 
 Honestly, this is just my attempting to learn Astro. Nothing super exciting.
 
