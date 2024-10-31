@@ -9,6 +9,15 @@ export default defineConfig({
   vite: {
     css: {
       modules: {},
+      preprocessorOptions: {
+        scss: {
+          additionalData: `
+            @import "./src/assets/styles/colors.module.scss";
+            @import "./src/assets/styles/fonts.module.scss";
+            @import "./src/assets/styles/typography.module.scss";
+          `
+        }
+      }
     }
   }
 });
