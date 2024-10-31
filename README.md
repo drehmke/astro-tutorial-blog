@@ -19,4 +19,4 @@ Bun is fun.
 
 # Left Off At #
 
-https://docs.astro.build/en/tutorial/2-pages/4/
+https://docs.astro.build/en/tutorial/3-components/

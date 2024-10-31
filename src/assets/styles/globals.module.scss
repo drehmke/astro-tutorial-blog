@@ -1,13 +1,11 @@
-@use './fonts.module.scss';
-@use './colors.module.scss';
-@use './typography.module.scss';
+html {
+  box-sizing: border-box;
+  background-color: light-dark(var(--white), var(--black));
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
 
-:root {
-	html {
-    box-sizing: border-box;
-		background-color: light-dark(var(--white), var(--black));
-    height: 100vh;
-    padding: 0;
-    margin: 0;
-	}
+a {
+  color: light-dark(var(--purple), var(--purple));
 }
